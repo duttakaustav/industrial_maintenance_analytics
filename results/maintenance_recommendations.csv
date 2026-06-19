@@ -1,0 +1,4 @@
+machine_id,health_status,risk_level,recommendation
+M001,Warning,Medium,Maintenance planning recommended. Issues identified: Elevated temperature. Recommended actions: Monitor thermal performance.
+M002,Warning,Medium,Maintenance planning recommended. Issues identified: Elevated vibration; Excessive downtime. Recommended actions: Schedule vibration inspection; Review preventive maintenance schedule.
+M003,Critical,High,Immediate maintenance action required. Issues identified: Overheating; Excessive vibration; Frequent alert episodes. Recommended actions: Inspect cooling system; Inspect bearings; Inspect shaft alignment; Investigate recurring abnormal operating conditions.

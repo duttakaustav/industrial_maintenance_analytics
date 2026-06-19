@@ -1,0 +1,4 @@
+Machine,Availability (%),Failure Episodes,MTBF (hrs),MTTR (hrs),Total Downtime (hrs),Energy Consumption (kWh),Avg Temperature (°C),Avg Vibration (mm/s)
+M001,97.85,0,1943.74,0.0,42.67,52205.37,62.16,2.02
+M002,96.13,0,1942.05,0.0,78.25,23824.0,50.08,1.6
+M003,97.77,1,1947.31,44.33,44.33,64828.61,68.84,3.74

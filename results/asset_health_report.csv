@@ -1,0 +1,4 @@
+machine_id,max_temperature_c,max_vibration_mm_s,total_downtime_min,alert_episodes,health_status,risk_level,detected_issues,recommended_actions
+M001,84.78,3.79,2560,0,Warning,Medium,Elevated temperature,Monitor thermal performance
+M002,62.39,5.02,4695,0,Warning,Medium,Elevated vibration; Excessive downtime,Schedule vibration inspection; Review preventive maintenance schedule
+M003,96.57,8.96,2660,15,Critical,High,Overheating; Excessive vibration; Frequent alert episodes,Inspect cooling system; Inspect bearings; Inspect shaft alignment; Investigate recurring abnormal operating conditions
