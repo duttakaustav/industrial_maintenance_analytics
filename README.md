@@ -10,27 +10,27 @@ Understanding these changes is an important part of maintenance engineering beca
 
 Industrial Maintenance Analytics is a maintenance engineering study that examines machine operating records and converts them into maintenance findings.
 
-The project focuses on the evaluation of machine performance, operating condition, machine health status, and maintenance requirements. Information related to runtime, downtime, energy consumption, temperature, vibration, and maintenance activity is analyzed to develop a broader understanding of machine behaviour and operating condition.
+The project evaluates machine performance, operating condition, machine health status, and maintenance requirements using information related to runtime, downtime, energy consumption, temperature, vibration, and maintenance activity.
 
-A structured assessment methodology is used to review machine performance, identify unusual operating conditions, evaluate machine health status, and develop maintenance guidance. The resulting findings are presented through engineering reports and dashboards that provide a clear summary of machine condition and maintenance priority.
+A structured assessment process is used to review machine behaviour and identify maintenance needs. The resulting findings are presented through engineering reports and dashboards that summarize machine condition and maintenance priority.
 
-The project combines data preparation, engineering evaluation, and result visualization within a single workflow and demonstrates how machine operating records can be transformed into practical maintenance findings.
+The project demonstrates how machine operating records can be transformed into practical maintenance findings through data preparation, engineering evaluation, and result visualization.
 
 ## Project Objective
 
 The objective of this project is to demonstrate how machine operating records can be used to support maintenance engineering activities.
 
-Industrial machines generate large amounts of operational information during normal operation. When reviewed systematically, this information can provide valuable insight into machine performance, operating condition, and potential maintenance requirements. The project was developed to illustrate how these observations can be organized and evaluated through a structured assessment process.
+The project was developed to illustrate how operational information can be organized and evaluated through a structured assessment process to support machine condition evaluation and maintenance planning.
 
-By combining multiple sources of operating information, the project provides a practical example of how engineering data can be used to support maintenance planning and machine condition evaluation.
+By combining multiple sources of operating information, the project provides a practical example of how engineering data can be transformed into maintenance findings.
 
-The final outcome is a set of reports and dashboards that summarize machine condition and maintenance needs in a clear and accessible format.
+The final outcome is a set of reports and dashboards that summarize machine condition and maintenance needs.
 
 ## Project Architecture
 
 The project follows a three-part structure consisting of a data source, an assessment process, and project outputs.
 
-Machine operating records provide the operational data required for evaluation. The assessment process reviews machine performance and operating condition before producing maintenance findings. The resulting findings are presented through engineering reports and dashboards.
+Machine operating records provide the input data for evaluation. The assessment process examines machine performance and operating condition before producing maintenance findings. The resulting findings are presented through engineering reports and dashboards.
 
 ![Project Architecture](images/project_architecture.png)
 
@@ -38,19 +38,15 @@ Machine operating records provide the operational data required for evaluation. 
 
 The assessment methodology is used to examine machine operating records and convert them into maintenance findings.
 
-The process combines performance review and operating condition review to develop a broader understanding of machine behaviour. Information related to reliability, efficiency, temperature, vibration, and operating interruptions is evaluated and brought together during machine health evaluation.
+The process combines performance review and operating condition review to evaluate machine behaviour and operating condition. Information related to reliability, efficiency, temperature, vibration, and operating interruptions is brought together during machine health evaluation.
 
-The resulting health status is then used to develop maintenance guidance and identify machines that require additional attention.
-
-The methodology provides a structured approach for moving from raw operating information to practical maintenance findings.
+The resulting health status is used to develop maintenance guidance and identify machines that require additional attention.
 
 ![Assessment Methodology](images/assessment_methodology.png)
 
 ## Project Outputs
 
-The assessment process produces a collection of reports and dashboards that summarize machine performance, operating condition, machine health status, and maintenance needs.
-
-These outputs provide a complete record of the study findings and support comparison between the three machines.
+The assessment process produces reports and dashboards that summarize machine performance, operating condition, machine health status, and maintenance needs.
 
 ### Generated Reports
 
@@ -63,9 +59,9 @@ The project generates four reports in CSV format.
 | `asset_health_report.csv`         | Machine health status and maintenance risk evaluation                      |
 | `maintenance_recommendations.csv` | Recommended maintenance actions for each machine                           |
 
-### Representative Report Preview
+### Report Preview
 
-The following tables provide a brief preview of selected report outputs. Complete report files are available in the project results directory.
+The following tables provide a preview of selected report outputs. Complete report files are available in the results directory.
 
 ### Key Performance Indicator (KPI) Report
 
@@ -90,7 +86,7 @@ The KPI report includes machine performance measures and reliability indicators.
 
 ### Generated Dashboards
 
-The project generates five dashboards that provide a visual summary of the assessment findings.
+The project generates five dashboards that summarize the assessment findings.
 
 | Dashboard                    | Description                                      |
 | ---------------------------- | ------------------------------------------------ |
@@ -124,7 +120,7 @@ The project generates five dashboards that provide a visual summary of the asses
 
 ## Repository Structure
 
-The repository is organized into separate directories for data storage, analysis, visualization, project outputs, project diagrams, and supporting materials.
+The repository is organized into separate directories for data storage, analysis, visualization, project outputs, project diagrams, and project documentation.
 
 ```text
 industrial_maintenance_analytics
@@ -190,48 +186,6 @@ The source code is organized into modules responsible for data preparation, anal
 | `analytics/`        | Performance review, condition review, machine health evaluation, and maintenance guidance |
 | `visualization/`    | Dashboard creation and result visualization                                               |
 
-## Jupyter Notebook Walkthrough
-
-The repository includes a Jupyter notebook that presents the study, generated outputs, and final results in a single guided document.
-
-The notebook is intended for readers who wish to understand how the assessment findings relate to machine behaviour, operating conditions, and maintenance decisions.
-
-Notebook location:
-
-`notebook/project_walkthrough.ipynb`
-
-### Using the Notebook
-
-1. Complete the project setup described in the **How To Run** section.
-
-2. Ensure that all required project dependencies have been installed successfully.
-
-3. Launch a notebook-compatible environment such as:
-
-   * Jupyter Notebook
-   * JupyterLab
-   * Visual Studio Code (VS Code)
-
-4. Open:
-
-   ```text
-   notebook/project_walkthrough.ipynb
-   ```
-
-5. Select the project Python environment as the notebook kernel.
-
-6. Confirm that the kernel is active and connected before executing any notebook cells.
-
-7. Run the notebook cells sequentially from top to bottom.
-
-8. The notebook will display explanations, report previews, dashboard visualizations, and study findings as each section is executed.
-
-### Notebook Purpose
-
-The notebook is designed as a companion to the source code rather than a replacement for it.
-
-Readers interested in implementation details can explore the source code modules, while readers interested in methodology, interpretation, and project results can follow the notebook as a standalone walkthrough of the study.
-
 ## How To Run
 
 ### Prerequisites
@@ -292,23 +246,41 @@ After successful execution, the generated reports and dashboards will be availab
 results/
 ```
 
-### Open the Notebook
+## Jupyter Notebook Walkthrough
 
-The notebook can be opened at any stage to review the study, methodology, generated outputs, and final results.
+The repository includes a Jupyter notebook that presents the study, generated outputs, and final results in a single guided document.
 
-Open:
+The notebook is intended for readers who wish to understand how the assessment findings relate to machine behaviour, operating conditions, and maintenance decisions.
 
-```text
-notebook/project_walkthrough.ipynb
-```
+### Using the Notebook
 
-using Jupyter Notebook, JupyterLab, VS Code, or another notebook-compatible environment.
+1. Launch a notebook-compatible environment such as:
 
-Select the project Python environment as the notebook kernel.
+   * Jupyter Notebook
+   * JupyterLab
+   * Visual Studio Code (VS Code)
 
-**Note for VS Code:** If prompted to install `ipykernel` when selecting the notebook kernel, complete the installation and reconnect the kernel before executing the notebook cells.
+2. Open the notebook file:
 
-Execute the notebook cells sequentially from top to bottom.
+   `notebook/project_walkthrough.ipynb`
+
+3. Select the project Python environment as the notebook kernel.
+
+4. **VS Code users:** If prompted to install `ipykernel` when selecting the notebook kernel, complete the installation and reconnect the kernel.
+
+5. Confirm that the kernel is active and connected before executing any notebook cells.
+
+6. Run the notebook cells sequentially from top to bottom.
+
+7. The notebook will display explanations, report previews, dashboard visualizations, and study findings as each section is executed.
+
+**Note:** Readers who wish to reproduce the project outputs should first complete the setup steps described in the **How To Run** section.
+
+### Notebook Purpose
+
+The notebook is designed as a companion to the source code rather than a replacement for it.
+
+Readers interested in implementation details can explore the source code modules, while readers interested in methodology, interpretation, and project results can follow the notebook as a standalone walkthrough of the study.
 
 ## Assumptions and Limitations
 
@@ -318,25 +290,21 @@ The study was developed under the following assumptions:
 
 * The dataset represents machine operation over a ninety-day operating period.
 * Machine operating records provide sufficient information for the scope of the study.
-* Temperature and vibration measurements provide useful indicators of machine condition.
-* Runtime and downtime records provide useful indicators of machine performance and reliability.
+* Temperature, vibration, runtime, and downtime provide useful indicators of machine condition, performance, and reliability.
 * The engineering thresholds used in the assessment are suitable for identifying normal and abnormal operating behaviour.
-* Machine health status can be evaluated by combining performance measures, condition review results, and operating history.
-* Maintenance guidance can be developed from the operating patterns present in the dataset.
-* The generated dataset contains both normal and abnormal machine operating conditions.
-* The three machine profiles provide different operating patterns for the assessment process.
+* Machine health status and maintenance guidance can be developed from the operating patterns present in the dataset.
+* The generated dataset contains representative examples of both normal and abnormal machine operating conditions.
+* The three machine profiles provide sufficient variation for the assessment process.
 
 ### Limitations
 
 The study was developed within the following limitations:
 
 * The project uses synthetic operating data rather than measurements collected from physical equipment.
-* The assessment results depend on the operating patterns intentionally introduced during dataset design.
+* The assessment results depend on the operating patterns included in the dataset.
 * The study evaluates only three machines and does not represent every type of equipment found in industrial environments.
-* The assessment uses fixed engineering thresholds throughout the study.
-* The project evaluates machine condition using a limited set of operating indicators, including runtime, downtime, temperature, and vibration.
-* Factors such as production demand, environmental conditions, equipment age, maintenance history, spare part availability, and operator practices are not considered.
-* The project does not include live sensor data, real-time monitoring, or continuous data collection.
-* The project does not include machine learning techniques or methods for predicting future failures.
+* The assessment uses fixed engineering thresholds and a limited set of operating indicators.
+* Factors such as environmental conditions, equipment age, maintenance history, spare part availability, production demand, and operator practices are not considered.
+* The project does not include live sensor data, real-time monitoring, machine learning techniques, or methods for predicting future failures.
 * The generated maintenance guidance is intended for demonstration purposes and should not be used as a replacement for site-specific engineering evaluation.
 * Maintenance decision making in real industrial environments requires additional engineering, operational, safety, and cost-related considerations that are outside the scope of this study.
